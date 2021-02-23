@@ -2,7 +2,7 @@ import React from "react";
 
 import { FullScreen, Container, Close } from "./styles";
 
-interface Props {
+export interface ModalProps {
   open: boolean;
   setOpen: (newValue: boolean) => void;
   title: string;
@@ -12,7 +12,7 @@ export interface IFullScreen {
   open: boolean;
 }
 
-export const Modal: React.FC<Props> = ({
+export const Modal: React.FC<ModalProps> = ({
   open,
   setOpen,
   title,
