@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 8080",
-    "build": "tsc",
+    "build": "rm -rf dist && mkdir dist && tsc",
     "build-storybook": "build-storybook -o ./dist",
     "chromatic": "npx chromatic --project-token 0a8b02e7098c",
     "publish:npm": "rm -rf dist && mkdir dist && tsc"
