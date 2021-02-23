@@ -21,7 +21,7 @@ export interface IBox {
   ref: any;
 }
 
-export const CheckBox = forwardRef(
+const CheckBox = forwardRef(
   ({ label, name, value, color = "#f89406", ...props }: Props, ref) => {
     const { readOnly, onChange } = props;
 
@@ -39,3 +39,5 @@ export const CheckBox = forwardRef(
     );
   }
 );
+
+export default CheckBox;

@@ -19,7 +19,7 @@ export const Label = styled.label`
   }
 `;
 
-export const Radio = styled.input.attrs({
+export const RadioWrapper = styled.input.attrs({
   type: "radio",
 })`
   cursor: pointer;

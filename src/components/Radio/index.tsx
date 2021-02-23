@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { forwardRef } from "react";
 
-import { Label, Radio, Mark } from "./styles";
+import { Label, RadioWrapper, Mark } from "./styles";
 
 export interface Props {
   label: string;
@@ -14,7 +14,7 @@ export interface Props {
   onChange?: () => void;
 }
 
-const RadioWrapper = forwardRef(
+const Radio = forwardRef(
   ({ label, name, value, color = "#f89406", ...props }: Props, ref) => {
     const { readOnly, onChange } = props;
 
@@ -26,11 +26,11 @@ const RadioWrapper = forwardRef(
       >
         {label}
 
-        <Radio {...props} ref={ref} name={name} value={value} />
+        <RadioWrapper {...props} ref={ref} name={name} value={value} />
         <Mark />
       </Label>
     );
   }
 );
 
-export { RadioWrapper as Radio };
+export default Radio;

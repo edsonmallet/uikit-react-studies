@@ -16,7 +16,7 @@ export interface ILabel {
   icon?: React.ReactNode | React.Component;
 }
 
-export const Input: React.FC<Props> = ({
+const Input: React.FC<Props> = ({
   name,
   type = "text",
   color = "#f89406",
@@ -39,3 +39,5 @@ export const Input: React.FC<Props> = ({
     </Label>
   );
 };
+
+export default Input;

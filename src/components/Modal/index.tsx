@@ -12,7 +12,7 @@ export interface IFullScreen {
   open: boolean;
 }
 
-export const Modal: React.FC<ModalProps> = ({
+const Modal: React.FC<ModalProps> = ({
   open,
   setOpen,
   title,
@@ -29,3 +29,5 @@ export const Modal: React.FC<ModalProps> = ({
     </FullScreen>
   );
 };
+
+export default Modal;
