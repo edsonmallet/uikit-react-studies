@@ -1,6 +1,6 @@
 {
   "name": "studies-uikit",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "Edson Mallet",
   "main": "dist/index.js",
   "private": false,
