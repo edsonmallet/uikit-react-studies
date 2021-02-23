@@ -33,4 +33,4 @@ const Radio = forwardRef(
   }
 );
 
-export default Radio;
+export { Radio };

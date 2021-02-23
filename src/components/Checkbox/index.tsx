@@ -40,4 +40,4 @@ const CheckBox = forwardRef(
   }
 );
 
-export default CheckBox;
+export { CheckBox };
