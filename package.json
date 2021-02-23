@@ -3,6 +3,7 @@
   "version": "1.0.9",
   "author": "Edson Mallet",
   "main": "dist/index.js",
+  "files": ["./dist"],
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 8080",
