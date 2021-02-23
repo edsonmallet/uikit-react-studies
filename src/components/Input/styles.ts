@@ -6,20 +6,21 @@ export const Label = styled.label<ILabel>`
   display: flex;
   position: relative;
   margin-bottom: 2rem;
+
   > input {
-    background-color: #19181f;
-    border: 2px solid #25242c;
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
     border-radius: 4px;
     padding: 16px;
     padding-left: ${(props) => (props.icon ? "40px" : "16px")};
-    color: #fff;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 16px;
     transition: 180ms ease-in-out;
     &::placeholder {
-      color: rgba(255, 255, 255, 0.2);
+      color: rgba(0, 0, 0, 0.5);
     }
     ~ svg {
-      fill: rgba(255, 255, 255, 0.2);
+      fill: rgba(0, 0, 0, 0.5);
       position: absolute;
       left: 12px;
       top: 16px;

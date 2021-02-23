@@ -8,7 +8,7 @@ export const FullScreen = styled.div<IFullScreen>`
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   display: ${(props) => (props.open ? "flex" : "none")};
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #1e1d24;
+  background-color: #fff;
   border-radius: 8px;
   animation: slideIn 350ms cubic-bezier(0.42, 0, 0.21, 1) 1;
   @keyframes slideIn {
@@ -45,9 +45,9 @@ export const Container = styled.div`
       opacity: 1;
     }
   }
-  color: #c4c4c4;
+  color: #000;
   h2 {
-    color: #fff;
+    color: #000;
     margin-bottom: 28px;
   }
 `;
@@ -56,7 +56,7 @@ export const Close = styled.button`
   cursor: pointer;
   align-self: flex-end;
   margin-bottom: 24px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   background: transparent;
   border: 0;
   font-size: 16px;

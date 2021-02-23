@@ -1,58 +1,50 @@
 import React, { useState } from "react";
 
-import { CheckBox } from "../src";
+import { Radio } from "../src";
 
 export default {
-  title: "Checkbox",
-  component: CheckBox,
+  title: "Radio",
+  component: Radio,
 };
 
 const Group: React.VFC<{}> = () => {
-  const allOptions = [
+  const options = [
     { id: 1, value: "Alpha" },
     { id: 2, value: "Beta" },
   ];
 
-  const [options, setOptions] = useState([allOptions[1].id]);
-
-  function toggleOption(id: number) {
-    setOptions(
-      options.includes(id)
-        ? options.filter((option) => option !== id)
-        : [...options, id]
-    );
-  }
+  const [option, setOption] = useState(options[1].id);
 
   return (
     <form>
-      {allOptions.map((item) => (
-        <CheckBox
-          name="checkbox"
+      {options.map((item) => (
+        <Radio
+          name="radio"
           key={item.id}
           label={item.value}
           value={item.value}
-          checked={options.includes(item.id)}
-          onChange={() => toggleOption(item.id)}
+          checked={option === item.id}
+          onChange={() => setOption(Number(item.id))}
         />
       ))}
     </form>
   );
 };
 const Checked: React.VFC<{}> = () => (
-  <CheckBox
-    name="checkbox"
+  <Radio
     label="Checked"
     value="Checked"
+    name="radio"
     defaultChecked={true}
     readOnly
   />
 );
 
 const Unchecked: React.VFC<{}> = () => (
-  <CheckBox
-    name="checkbox"
+  <Radio
     label="Unchecked"
     value="Unchecked"
+    name="radio"
     checked={false}
     readOnly
   />

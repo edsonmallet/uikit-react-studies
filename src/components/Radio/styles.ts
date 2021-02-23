@@ -11,7 +11,7 @@ export const Label = styled.label`
   margin-bottom: 10px;
   cursor: pointer;
   user-select: none;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   &:hover span,
   input:checked ~ span {
@@ -38,8 +38,8 @@ export const Mark = styled.span`
   left: 0;
   height: 22px;
   width: 22px;
-  background-color: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   transition: 180ms ease-in-out;
   &:after {
