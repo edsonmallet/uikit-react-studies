@@ -1,5 +1,5 @@
 module.exports = {
-    stories: [],
+    stories: ['../stories/*.stories.tsx'],
     addons: [],
     typescript: {
         reactDocgen: 'react-docgen-typescript',

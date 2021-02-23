@@ -1,9 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
-import { Button } from "../src";
+import { Button } from "../src/components/Button";
 
-storiesOf("Button", module)
-  .add("Default", () => <Button>Default</Button>)
-  .add("Outlined", () => <Button outlined>Outlined</Button>)
-  .add("Disabled", () => <Button disabled>Default</Button>);
+export default {
+  title: "Botões",
+  component: Button,
+};
+
+const Default = () => <Button>Default</Button>;
+const Outlined = () => <Button outlined>Outlined</Button>;
+const Disabled = () => <Button disabled>Default</Button>;
+
+export { Default, Outlined, Disabled };
