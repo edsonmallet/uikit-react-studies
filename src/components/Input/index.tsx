@@ -2,7 +2,7 @@ import React from "react";
 
 import { Label } from "./styles";
 
-export interface Props {
+export interface InputProps {
   name: string;
   value: string;
   setValue: (text: string) => void;
@@ -16,7 +16,7 @@ export interface ILabel {
   icon?: React.ReactNode | React.Component;
 }
 
-const Input: React.FC<Props> = ({
+const Input: React.FC<InputProps> = ({
   name,
   type = "text",
   color = "#f89406",

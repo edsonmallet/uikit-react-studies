@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 import { Label, Box, Mark } from "./styles";
 
-export interface Props {
+export interface CheckboxProps {
   label: string;
   name: string;
   value: any;
@@ -13,7 +13,7 @@ export interface Props {
   onChange?: () => void;
 }
 
-export interface ILabel {
+export interface ILabelCheckbox {
   color?: string;
 }
 
@@ -21,8 +21,8 @@ export interface IBox {
   ref: any;
 }
 
-const CheckBox = forwardRef(
-  ({ label, name, value, color = "#f89406", ...props }: Props, ref) => {
+const CheckBox: React.FC<CheckboxProps> = forwardRef(
+  ({ label, name, value, color = "#f89406", ...props }: CheckboxProps, ref) => {
     const { readOnly, onChange } = props;
 
     return (

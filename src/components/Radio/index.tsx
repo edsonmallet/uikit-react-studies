@@ -3,7 +3,7 @@ import React, { forwardRef } from "react";
 
 import { Label, RadioWrapper, Mark } from "./styles";
 
-export interface Props {
+export interface RadioProps {
   label: string;
   name: string;
   value: any;
@@ -14,8 +14,8 @@ export interface Props {
   onChange?: () => void;
 }
 
-const Radio = forwardRef(
-  ({ label, name, value, color = "#f89406", ...props }: Props, ref) => {
+const Radio: React.FC<RadioProps> = forwardRef(
+  ({ label, name, value, color = "#f89406", ...props }: RadioProps, ref) => {
     const { readOnly, onChange } = props;
 
     return (

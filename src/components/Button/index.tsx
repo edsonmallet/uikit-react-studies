@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container } from "./styles";
 
-export interface Props {
+export interface ButtonProps {
   backgroundColor?: string;
   color?: string;
   outlined?: boolean;
@@ -10,7 +10,7 @@ export interface Props {
   disabled?: boolean;
 }
 
-const Button: React.FC<Props> = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   backgroundColor = "#f89406",
   color = "#fff",
