@@ -1,7 +1,5 @@
 node_modules
 src
-stories
-.storybook
 tsconfig.json
 
 .github

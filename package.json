@@ -7,6 +7,11 @@
     "./dist"
   ],
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
     "storybook": "start-storybook -p 8080",
     "build": "tsc -p .",
