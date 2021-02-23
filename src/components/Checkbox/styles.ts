@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { ILabel, IBox } from "./index";
+import { ILabelCheckbox, IBox } from "./index";
 
-export const Label = styled.label<ILabel>`
+export const Label = styled.label<ILabelCheckbox>`
   display: flex;
   align-items: center;
   position: relative;

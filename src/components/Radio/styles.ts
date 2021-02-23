@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Props } from "./index";
+import { RadioProps } from "./index";
 
 export const Label = styled.label`
   display: flex;
@@ -15,7 +15,7 @@ export const Label = styled.label`
   font-size: 16px;
   &:hover span,
   input:checked ~ span {
-    background-color: ${(props: Props) => props.color};
+    background-color: ${(props: RadioProps) => props.color};
   }
 `;
 

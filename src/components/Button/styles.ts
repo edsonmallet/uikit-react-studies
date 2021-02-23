@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { lighten, darken, readableColor } from "polished";
 
-import { Props } from "./index";
+import { ButtonProps } from "./index";
 
-export const Container = styled.button<Props>`
+export const Container = styled.button<ButtonProps>`
   background-color: ${(props) =>
     props.outlined ? "transparent" : props.backgroundColor};
-  color: ${({ color }: Props) =>
+  color: ${({ color }: ButtonProps) =>
     readableColor(color as string, "#fff", "#19181f")};
   padding: 18px 45px;
   text-transform: uppercase;
