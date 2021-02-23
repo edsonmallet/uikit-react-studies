@@ -1,9 +1,11 @@
 {
   "name": "studies-uikit",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "Edson Mallet",
   "main": "dist/index.js",
-  "files": ["./dist"],
+  "files": [
+    "./dist"
+  ],
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 8080",
